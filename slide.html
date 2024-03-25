@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+@keyframes slide
+{
+0%{background-image:url(image/1.jfif)}
+10%{background-image:url(image/2.jfif)}
+20%{background-image:url(image/3.jfif)}
+30%{background-image:url(image/4.jfif)}
+40%{background-image:url(image/5.jfif)}
+50%{background-image:url(image/6.jfif)}
+60%{background-image:url(image/7.jfif)}
+70%{background-image:url(image/8.jfif)}
+80%{background-image:url(image/9.jfif)}
+90%{background-image:url(image/10.jfif)}
+}
+@keyframes movep
+{
+0%{background-position:0px 0px;opacity:0.2;transform:rotate(0deg)}
+100%{background-position:-200px 0px;opacity:0.1;transform:rotate(359deg)}
+}
+#div2{
+animation:movep 5s 1;
+background-image:url(image/5.jfif);
+width:200px;height:200px;
+background-repeat:no-repeat;
+transform-origin:359px 200px
+
+}
+#div1{animation:slide 15s infinite;
+width:1280px;height:1919px;
+background-repeat:no-repeat;
+}
+</style>
+</head>
+<body>
+<div id=div2></div>

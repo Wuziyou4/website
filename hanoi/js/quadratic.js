@@ -26,7 +26,7 @@ function quadratic(a,b,c)//
         {
             document.write("delta<0:the solution has no real solution<br>");            
         }
-        else if(delta=0)
+        else if(delta===0)
         {
             document.write("delta=0:the only solution is x=" + (-b/(2*a))+"<br>");
         }
@@ -70,7 +70,7 @@ case"Apr":
 num=4;
 break;
 case"May":
-num=5
+num=5;
 break;
 case"June":
 num=6;

@@ -1,0 +1,27 @@
+<html><head>
+<style id = dynamic>
+@keyframes diskmoveK
+            {
+                0%{left:91px;top:151px}
+                30%{left:91px;top:0px}
+                70%{left:201px;top:0px}
+                100%{left:201px;top:181px}
+                
+            }
+        </style>
+</head>
+<body>
+<div style= "position:absolute;background-color:red;width:100px;height:100px;animation:diskmove">
+</div>
+<script>
+let st = document.getElementBy('dynamic');
+let t0 = st.innerHTML;
+let x0 = '100px',y0 = '45px',x1 = '234px',y1 = '100px';
+let t1 = t0.replace(/91px/g,x0).replace(/151px/,y0)
+	.replace(/201px/g,x1).replace(/181px/,y1)
+	.replace(/K/,'1');
+st.innerHTML = t1;
+setTimeout(function(){document.getElementsByTagName('div')[0].animation='movedisk1';}m,2000);
+</script>
+</body>
+</html>
